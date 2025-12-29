@@ -254,7 +254,7 @@ import Photos
 
     }
 
-    @objc func requestAuthorization(_ command: CDVInvokedUrlCommand) {
+    @MainActor @objc func requestAuthorization(_ command: CDVInvokedUrlCommand) {
 
         let service = PhotoLibraryService.instance
 
